@@ -538,7 +538,20 @@
 		}
 	&__pinned {
 		.articles-list__title {
+			position: relative;
+			padding: 0 40px 0 0;
 			font-weight: var(--tertiary-font-weight);
+			&:after {
+				position: absolute;
+			  display: block;
+			  width: 32px;
+			  height: 32px;
+			  top: 0;
+			  right: 0;
+			  background: url(../img/icons/pin.svg) center no-repeat;
+			  background-size: 100%;
+			  content: "";
+				}
 			}
 		}
 	}
@@ -746,4 +759,3 @@
 		font-weight: var(--tertiary-font-weight);
 		}
 	}
-
